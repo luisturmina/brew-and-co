@@ -85,7 +85,7 @@ export default function HomePage() {
             14 Ridley Road, Dalston E8 2NP
           </h2>
           <p className="text-foam/60 text-sm mb-8">
-            Seg – Sex 7h30–20h00 · Sáb – Dom 8h00–19h00
+            Seg – Sex 10h30–18h00 · Sáb – Dom 12h00–15h00
           </p>
           <Link
             href="/about"

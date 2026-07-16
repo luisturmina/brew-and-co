@@ -50,8 +50,8 @@ export function Footer() {
               <p>Dalston, London E8 2NP</p>
             </address>
             <div className="mt-4 text-sm space-y-1">
-              <p>Seg – Sex: 7h30 – 20h00</p>
-              <p>Sáb – Dom: 8h00 – 19h00</p>
+              <p>Seg – Sex: 10h30 – 18h00</p>
+              <p>Sáb – Dom: 12h00 – 15h00</p>
             </div>
           </div>
         </div>
