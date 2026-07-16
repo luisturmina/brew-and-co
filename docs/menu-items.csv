@@ -1,0 +1,45 @@
+categoria,nome,descricao,preco,etiqueta
+Bebidas com Espresso,Espresso,Dose de espresso extraída lentamente com crema dourada e aroma intenso de caramelo tostado,7.00,
+Bebidas com Espresso,Espresso Duplo,Dose dupla para quem não abre mão de mais intensidade e corpo no café,10.00,
+Bebidas com Espresso,Americano,Espresso diluído em água quente na proporção certa — suave sem perder o sabor,9.00,
+Bebidas com Espresso,Cappuccino,Espresso equilibrado com leite vaporizado e microespuma sedosa polvilhado com cacau em pó,13.00,popular
+Bebidas com Espresso,Flat White,Ristretto com leite microespumado em proporção concentrada — mais café menos espuma,14.00,
+Bebidas com Espresso,Latte,Espresso suave com muito leite vaporizado cremoso e arte latte feita na hora,14.50,favorito da casa
+Bebidas com Espresso,Latte de Caramelo,Latte clássico enriquecido com calda de caramelo artesanal e finalizado com espuma de leite,16.50,popular
+Bebidas com Espresso,Mocha,Espresso com chocolate belga derretido e leite vaporizado finalizado com chantilly e raspas de chocolate,17.00,popular
+Bebidas com Espresso,Macchiato,Espresso marcado com uma colherada generosa de espuma de leite fresco,10.00,
+Bebidas com Espresso,Cortado,Espresso cortado na mesma proporção de leite vaporizado quente — redondo e sem amargor,11.00,
+Bebidas com Espresso,Affogato,Bola de sorvete de creme artesanal afogada em espresso recém-extraído,19.00,favorito da casa
+Bebidas Geladas,Cold Brew,Café extraído a frio por 16 horas — sabor suave naturalmente adocicado e sem acidez,18.00,favorito da casa
+Bebidas Geladas,Iced Latte,Espresso extraído sobre gelo fino com leite gelado cremoso servido em copo alto,16.00,popular
+Bebidas Geladas,Caramel Frappuccino,Blend gelado de espresso café caramelo artesanal e gelo coberto com chantilly e fio de caramelo,22.00,popular
+Bebidas Geladas,Chocolate Frappuccino,Blend cremoso de chocolate belga leite integral e gelo coberto com chantilly e cacau,21.00,
+Bebidas Geladas,Milkshake de Café,Sorvete de creme artesanal batido com espresso duplo e leite integral na hora,25.00,
+Bebidas Geladas,Matcha Latte Gelado,Matcha japonês de primeira colheita batido com leite de aveia sobre gelo — suave e terroso,19.00,novo
+Bebidas Geladas,Limonada com Espresso,Limonada artesanal de limão siciliano com espresso gelado e xarope de açúcar de cana,17.00,novo
+Bebidas Geladas,Chá Gelado de Pêssego,Blend de chá preto e chá branco com polpa de pêssego fresco e gelo em pedra,14.00,
+Bebidas Geladas,Chocolate Gelado Belga,Chocolate belga derretido com leite gelado e gelo servido em jarra com chantilly,20.00,
+Doces,Croissant de Amêndoas,Croissant de manteiga francesa recheado com creme de amêndoas e coberto com lâminas douradas tostadas,12.00,favorito da casa
+Doces,Muffin de Blueberry,Muffin artesanal com mirtilos frescos embutidos na massa e açúcar demerara crocante por cima,9.00,popular
+Doces,Brownie de Chocolate Belga,Brownie denso e úmido feito com chocolate 70% borda crocante e miolo cremoso quase cru,11.00,popular
+Doces,Cookie de Baunilha e Chocolate,Cookie grande assado na hora com chunks de chocolate amargo crocante por fora e mole por dentro,8.00,
+Doces,Cheesecake New-Yorkino,Fatia generosa de cheesecake cremoso com base de biscoito e coulis de frutas vermelhas frescas,16.00,favorito da casa
+Doces,Bolo de Cenoura com Ganache,Bolo de cenoura artesanal fofo e úmido com cobertura generosa de ganache de chocolate amargo,12.00,
+Doces,Cinnamon Roll,Rolo de canela artesanal assado na hora com recheio de canela e açúcar mascavo e glacê de cream cheese,14.00,novo
+Doces,Macaron de Lavanda e Mel,Macaron parisiense com ganache de lavanda e mel silvestre — leve crocante e floral,9.00,
+Doces,Fatia de Torta de Limão,Torta com massa sablée de manteiga creme de limão siciliano e merengue italiano dourado,14.00,
+Doces,Financier de Pistache,Bolinho francês de manteiga noisette com farinha de pistache e amêndoas laminadas,8.00,novo
+Salgados,Pão de Queijo Artesanal,Pão de queijo mineiro feito com queijo canastra maturado servido quentinho — 3 unidades,9.00,favorito da casa
+Salgados,Quiche Lorraine,Torta salgada com bacon defumado queijo gruyère e creme de ovos em massa folhada crocante,14.00,
+Salgados,Mini Croissant de Presunto e Brie,Croissant de manteiga recheado com presunto de parma e queijo brie cremoso levemente aquecido,13.00,popular
+Salgados,Tortinha de Espinafre e Ricota,Torta individual com recheio cremoso de espinafre fresco ricota e noz-moscada em massa quebrada,12.00,
+Salgados,Wrap de Frango Defumado,Tortilla de espinafre com frango defumado cream cheese temperado rúcula e tomate cereja,19.00,
+Salgados,Focaccia de Alecrim e Azeite,Focaccia assada na hora com azeite extravirgem alecrim fresco e flor de sal siciliano,11.00,popular
+Salgados,Bolinho de Carne Seca com Coalho,Bolinho assado recheado com carne seca desfiada e queijo coalho em massa de mandioca,10.00,favorito da casa
+Sanduíches,Caprese Artesanal,Focaccia artesanal com mozzarella de búfala fresca tomate heirloom manjericão e azeite trufado,28.00,favorito da casa
+Sanduíches,Club Sandwich Brew & Co,Pão de forma tostado com frango grelhado bacon alface americana tomate e maionese de ervas finas,26.00,popular
+Sanduíches,Panini de Pesto e Tomate Seco,Ciabatta grelhada com pesto de manjericão fresco tomate seco rúcula e grana padano ralado,24.00,
+Sanduíches,Smash Burger Artesanal,Pão brioche com hambúrguer smash de 150g queijo cheddar curado picles crocante e molho especial,32.00,novo
+Sanduíches,Bagel de Salmão Defumado,Bagel artesanal com salmão defumado fatiado cream cheese com ervas alcaparras e pepino,30.00,
+Sanduíches,Sanduíche de Brie e Geleia de Figo,Pão rústico com queijo brie derretido geleia de figo artesanal rúcula e nozes tostadas,27.00,favorito da casa
+Sanduíches,Wrap Vegetariano de Grão-de-Bico,Tortilla integral com grão-de-bico temperado abacate cream cheese e salada de folhas mistas,22.00,novo
