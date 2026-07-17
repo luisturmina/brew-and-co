@@ -24,6 +24,8 @@ const timeSlots = Array.from({ length: 27 }, (_, i) => {
 export function ReservationModal({ open, onClose }: Props) {
   const dialogRef = useRef<HTMLDialogElement>(null)
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const [form, setForm] = useState<FormState>({
     name: "",
     guests: "2",
@@ -39,7 +41,7 @@ export function ReservationModal({ open, onClose }: Props) {
     } else {
       dialog.close()
       // reset after close animation
-      const t = setTimeout(() => setSubmitted(false), 300)
+      const t = setTimeout(() => { setSubmitted(false); setError(null) }, 300)
       return () => clearTimeout(t)
     }
   }, [open])
@@ -48,9 +50,29 @@ export function ReservationModal({ open, onClose }: Props) {
     if (e.target === dialogRef.current) onClose()
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError(null)
+
+    try {
+      const res = await fetch("/api/reservation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      })
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data.error ?? "Erro ao confirmar reserva.")
+      }
+
+      setSubmitted(true)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Erro inesperado. Tente novamente.")
+    } finally {
+      setLoading(false)
+    }
   }
 
   const todayISO = new Date().toISOString().split("T")[0]
@@ -200,20 +222,29 @@ export function ReservationModal({ open, onClose }: Props) {
               </div>
             </div>
 
+            {/* Error message */}
+            {error && (
+              <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+                {error}
+              </p>
+            )}
+
             {/* Actions */}
             <div className="flex gap-3 pt-1">
               <button
                 type="button"
                 onClick={onClose}
-                className="flex-1 h-11 rounded-full border border-border text-espresso-muted text-sm font-semibold hover:border-espresso-muted hover:text-espresso hover:bg-parchment transition-all duration-[250ms]"
+                disabled={loading}
+                className="flex-1 h-11 rounded-full border border-border text-espresso-muted text-sm font-semibold hover:border-espresso-muted hover:text-espresso hover:bg-parchment transition-all duration-[250ms] disabled:opacity-50"
               >
                 Cancelar
               </button>
               <button
                 type="submit"
-                className="flex-1 h-11 rounded-full bg-terracotta text-white text-sm font-semibold hover:bg-terracotta-dark shadow-[0_4px_16px_rgba(207,94,56,0.35)] transition-colors duration-[250ms]"
+                disabled={loading}
+                className="flex-1 h-11 rounded-full bg-terracotta text-white text-sm font-semibold hover:bg-terracotta-dark shadow-[0_4px_16px_rgba(207,94,56,0.35)] transition-colors duration-[250ms] disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                Confirmar reserva
+                {loading ? "Confirmando…" : "Confirmar reserva"}
               </button>
             </div>
           </form>

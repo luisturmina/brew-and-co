@@ -3,6 +3,7 @@ import { Fraunces, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { N8nChat } from "@/components/N8nChat";
 
 const fraunces = Fraunces({
   variable: "--font-display",
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <N8nChat />
       </body>
     </html>
   );
